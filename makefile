@@ -100,8 +100,8 @@ installopenrc:
 
 installrunit:
 	@echo "installing runit service"
-	@install -dZ ${DESTDIR}/etc/sv/ly-runit-service
-	@install -DZ $(RESD)/ly-runit-service/* -t ${DESTDIR}/etc/sv/ly
+	@install -dZ ${DESTDIR}/etc/runit/sv/ly-runit-service
+	@install -DZ $(RESD)/ly-runit-service/* -t ${DESTDIR}/etc/runit/sv/ly
 
 uninstall:
 	@echo "uninstalling"
